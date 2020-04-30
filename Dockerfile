@@ -1,5 +1,5 @@
 FROM maven:3.6.3-jdk-8 AS build
-ADD ./opt/app
+ADD . /opt/app
 WORKDIR /opt/app
 RUN mvn -B -DskipTests clean package
 
