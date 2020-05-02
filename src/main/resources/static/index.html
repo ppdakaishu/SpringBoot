@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
+    <title>Cbw</title>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="bookmark" href="favicon.ico" type="image/x-icon"/>
 	
-	<link rel="stylesheet" href="common/css/index.css" />
+	<link rel="stylesheet" href="page/css/index.css" />
     <link rel="stylesheet" href="common/layui/css/layui.css" media="all"/>
 </head>
 
 <body>
 
+	<!-- Head -->
+	<div class="layui-row cbw_head" id="head">
+		<div class="layui-col-sm12 layui-col-md12">
+			<blockquote class="layui-elem-quote">
+				<i class="layui-icon">&#xe68e;</i>
+			</blockquote>
+		</div>
+	</div>
+	<!-- Head End -->
+	
+	<!-- Body -->
+	<div class="layui-row cbw_body" id="body">
+		<div class="layui-col-sm12 layui-col-md12">
+			<div class="my_body_particle" id="particle">
+				<div class="cbw_main_btn">
+					<a href="https://github.com/ppdakaishu/SpringBoot" class="layui-inline" target="_blank">
+						<i class="layui-icon">&#xe64c;</i>
+						GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Body End -->
+	
+	<!-- Footer -->
+	<div class="layui-row cbw_footer">
+		<div class="layui-col-sm12 layui-col-md12">
+			© 2020 - 2050 CBW
+		</div>
+	</div>
+	<!-- Footer End -->
+	
 	<!-- Layui -->
 	<script type="text/javascript" src="common/layui/layui.js"></script>
 	<!-- Jquery -->
 	<script type="text/javascript" src="common/jquery/jquery.min.js"></script>
 	<!-- Jqarticle -->
 	<script type="text/javascript" src="common/jqarticle/jparticle.min.js"></script>
-	
-	<!-- Head -->
-	<div class="layui-fluid">
-		<div class="layui-row layui-col-space15">
-			<div class="layui-col-sm12 layui-col-md12 my_head_style">
-				<blockquote class="layui-elem-quote">Cbw - SpringBoot</blockquote>
-			</div>
-		</div>
-	</div>
-	<!-- Head End -->
-	
-	<!-- Body -->
-	<div class="layui-row my_body_style" id="body">
-		<div class="layui-col-sm12 layui-col-md12">
-			<div class="my_body_particle" id="particle"></div>
-		</div>
-	</div>
-	<!-- Body End -->
-	
-	<!-- Footer -->
-	<div class="layui-row">
-		<div class="layui-col-sm12 layui-col-md12 my_footer_style">
-			© 2020 - 2050 CBW
-		</div>
-	</div>
-	<!-- Footer End -->
-	
 	<script>
 		layui.use(['form'], function(){
 			// form module
@@ -61,9 +67,9 @@
 				// Background color
 				background: "rgba(0,0,0,0)",
 				// The color of the particle and the line
-				color: "#fff",
+				color: "rgba(165,187,185,1)",
 				// Number of particles
-				particlesNumber:100,
+				particlesNumber:130,
 				// Interparticle attachment is prohibited
 // 				disableLinks:true,
 				// Prohibit interparticle connection (mouse)
@@ -77,7 +83,6 @@
 				    speed: 30,
 				 }
 			});
-
 		});
 	</script>
 		
